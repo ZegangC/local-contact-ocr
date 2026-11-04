@@ -1,0 +1,62 @@
+{
+  "data": "fictional",
+  "desktop_input_calls": 0,
+  "cloud_ocr_calls": 0,
+  "first_pass": {
+    "status": "paused",
+    "records": 2,
+    "next_index": 2,
+    "reason": "field_readings_disagree:phone"
+  },
+  "after_corrected_fixture_resume": {
+    "mode": "synthetic_offline_replay",
+    "fixture_sha256": "990b6356eb1bcc697601b32b3d60aeaedcd0943f35e8ec5eef8e3a23781021e7",
+    "next_index": 7,
+    "status": "synthetic_fixture_complete_not_live_address_book",
+    "records": 6,
+    "events": [
+      {
+        "index": 0,
+        "screen": 1,
+        "action": "committed"
+      },
+      {
+        "index": 1,
+        "screen": 1,
+        "action": "committed"
+      },
+      {
+        "index": 2,
+        "action": "paused",
+        "reason": "field_readings_disagree:phone"
+      },
+      {
+        "index": 2,
+        "screen": 1,
+        "action": "committed"
+      },
+      {
+        "index": 3,
+        "screen": 2,
+        "action": "committed"
+      },
+      {
+        "index": 4,
+        "screen": 2,
+        "action": "committed"
+      },
+      {
+        "index": 5,
+        "screen": 2,
+        "action": "committed"
+      },
+      {
+        "index": 6,
+        "screen": 1,
+        "action": "deduplicated"
+      }
+    ],
+    "attempts": 2
+  },
+  "scope": "OCR-text fixture replay, not image OCR or a live address-book run"
+}

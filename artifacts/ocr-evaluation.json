@@ -1,0 +1,85 @@
+{
+  "date": "2026-11-04",
+  "input": "generated_fictional_images",
+  "engine": "rapidocr-onnxruntime==1.4.4",
+  "cloud_calls": 0,
+  "cases": 7,
+  "complete_field_cases": 6,
+  "phone_exact_on_complete_fields": 5,
+  "remark_exact_on_complete_fields": 5,
+  "needs_review_count": 2,
+  "false_empty_count": 0,
+  "results": [
+    {
+      "case": "single",
+      "expected_phone": "00000000001",
+      "observed_phone": "00000000001",
+      "phone_exact": true,
+      "remark_exact": true,
+      "needs_review": false,
+      "false_empty": false,
+      "seconds": 3.889
+    },
+    {
+      "case": "empty",
+      "expected_phone": "没有",
+      "observed_phone": "没有",
+      "phone_exact": true,
+      "remark_exact": true,
+      "needs_review": false,
+      "false_empty": false,
+      "seconds": 2.886
+    },
+    {
+      "case": "multiple",
+      "expected_phone": "00000000004；00000000005",
+      "observed_phone": "00000000004；00000000005",
+      "phone_exact": true,
+      "remark_exact": true,
+      "needs_review": false,
+      "false_empty": false,
+      "seconds": 3.579
+    },
+    {
+      "case": "long_digits",
+      "expected_phone": "000000000003",
+      "observed_phone": "000000000003",
+      "phone_exact": true,
+      "remark_exact": true,
+      "needs_review": false,
+      "false_empty": false,
+      "seconds": 3.177
+    },
+    {
+      "case": "missing_boundary",
+      "expected_phone": "待核对",
+      "observed_phone": "待核对",
+      "phone_exact": true,
+      "remark_exact": true,
+      "needs_review": true,
+      "false_empty": false,
+      "seconds": 2.743
+    },
+    {
+      "case": "blurred",
+      "expected_phone": "00000000007",
+      "observed_phone": "待核对",
+      "phone_exact": false,
+      "remark_exact": false,
+      "needs_review": true,
+      "false_empty": false,
+      "seconds": 3.03
+    },
+    {
+      "case": "long_remark",
+      "expected_phone": "00000000008",
+      "observed_phone": "00000000008",
+      "phone_exact": true,
+      "remark_exact": true,
+      "needs_review": false,
+      "false_empty": false,
+      "seconds": 5.441
+    }
+  ],
+  "limits": "Synthetic panel benchmark only; no live navigation, real contacts or general accuracy claim."
+}
